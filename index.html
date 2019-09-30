@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap cdn link -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>EasyHttp</title>
+    <!-- Styling -->
+    <style>
+        footer{
+            position: static;
+            bottom: 0;
+            margin-top: 100px;
+            margin-bottom: 0;
+            width: 100%;
+            background-color: rgb(172, 172, 172);
+            padding:5px;
+        }
+        .container{ 
+            margin-bottom: 100px;
+        }
+        .notification{
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 align='center' class="display-3">Custom Ajax Library</h1>
+    <h1 align='center' class="display-4">EasyHttp</h2>
+    
+    <div class="container mt-5 mb-5">
+    <p class="lead">
+        Welcome to easyHTTP, simple and easy to use Graphical API to perform basic dummy XHR!
+    </p>
+        <div class="form-group">
+            <h2>GET POST</h2>
+            <input type="number" placeholder="Get all Posts!" class="form-control get-input ">
+            <button class="btn btn-success mt-2 get-btn">GET</button>
+        </div>
+        <hr>
+        <div class="form-group">
+            <h2>ADD POST</h2>
+            <input type="text" class="form-control post-title" placeholder="Post Title">
+            <input type="text" class="form-control mt-2 post-body" placeholder="Post Body">
+            <button type="button" class="btn btn-primary mt-2 post-btn">POST</button>
+        </div>
+        <hr>
+        <div class="form-group">
+            <h2>PUT POST</h2>
+            <input type="number" class="form-control put-id" placeholder="Post ID">
+            <input type="text" class="form-control mt-2 put-title" placeholder="Post Title">
+            <input type="text" class="form-control mt-2 put-body" placeholder="Post Body">
+            <button type="button" class="btn btn-primary mt-2 put-btn">PUT </button>
+        </div>
+        <hr>
+        <div class="form-group">
+            <h2>DELETE POST</h2>
+            <input type="number" placeholder="Post No." class="form-control delete-input">
+            <button type="button" class="btn btn-danger mt-2 delete-btn">DELETE</button>
+        </div>
+
+        <hr>
+        <br>
+
+        <h1 class="display-4">Result</h1><br>
+        <div class="alert notification" role="alert">
+            This is a primary alert—check it out!
+        </div>
+        <div id="response">
+
+        </div>
+
+    </div>
+    <footer>
+        <p class="pt-2"> This test API uses  <a href="https://jsonplaceholder.typicode.com/" target="_blank">JSON Placeholder</a> 😊</p>
+    </footer>
+    <!-- Library File -->
+    <script src="easyhttp.js"></script>
+    <!-- Main file -->
+    <script src="main.js"></script>
+</body>
+</html>
